@@ -2,9 +2,60 @@
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \usepackage{babel}
+\usepackage{cite}
+\usepackage{url}
+
+% For block comments
+\usepackage{verbatim}
+
+% For paper size and margin manipulation
+\usepackage[a4paper, margin=1in]{geometry}
+
 \begin{document}
 
-\title{Nass Replication Study}
+\title{Project Proposal: Evaluating Politeness toward Computers}
 \author{Matthew Neal, Shaown Sarker}
 \maketitle
+
+Clifford Nass and colleagues' 1999 study on human computer interaction looked to determine whether humans treat computers with politeness or not~\cite{nass1999}. Nass found that the social normative bias towards the human interviewer also extended to a computer program based interviewer, although objectively interviewees should not have had such a bias towards a non-human interviewer. The explanation of this behavior was that humans do not differentiate between computers and people when it comes to social interactions, and that the normative bias towards a human interviewer also extends to a computer one.
+
+One of the implications found by Nass was that humans simply reuse the same mental construct without much cognitive effort for social interactions with computers instead of forming a new one. However, in the intervening 16 years since the study, the sheer number of people with computer access, both at home and workplace, in the US has increased by a significant degree. Census reports indicate around 51\% of households had a computer at home in 1999~\cite{newburger2001}, while that percentage had increased to 83\% by 2013~\cite{file2014}. Furthermore, smart-phones have become completely ubiquitous over the same time period, the census bureau indicates that 63\% of households had a "handheld computer"(smart-phone, or other wireless computer) in 2013~\cite{file2014}. 
+
+The effect of the availability and extended familiarity of computers on human-computer interactions when it comes to interviewer bias has not been studied in depth. It seems fair to conclude that a replication of the study, to determine whether the ingratiation towards the computer interviewer perceived by the participants in the original study is influenced by the degree of knowledge of computers, is a worthwhile endeavor.
+
+\begin{comment}
+Clifford Nass' 1999 study on human computer interaction looked to determine whether humans treated computers with politeness or not\cite{nass1999}.  The study looked at Stanford University students, since the assumption was that such students had access and familiarity with computers and would be assumed to not treat computers in this way.  Surprisingly Nass' results proved that in fact the students did treat machines with the same sort of politeness what would be accorded to humans.
+
+In the intervening 16 years the sheer number of people with computer access at home in the US has increased by a significant degree.  Census reports indicate around 51\% of households had a computer at home in 1999\cite{newburger2001}, while that percentage had increased to 83\% by 2013 \cite{file2014}.
+
+Further, smart-phones have become completely ubiquitous over the same time period, the census bureau indicates that 63\% of households had a "handheld computer"(smart-phone, or other wireless computer)\cite{file2014}. It seems fair to conclude that a replication of Nass', study in light of the changing relationship that humans have with computers, is a worthwhile endeavour.
+\end{comment}
+
+In this study, we will focus on students from two disciplines within the North Carolina State University community. One group will come from Computer Science undergraduate and/or graduate students, and the other will likely be a group of non-Computer Science students. The idea with two distinct and separate groups of participants is to have a group of students that are intimately aware of the inner-workings of computer programs and a group of students that are much more likely to have access to computers from a layman rather than expert perspective. The underlying goal here is to determine whether the different level of understanding of computer translates differently to the personification that was found by Nass and colleagues back in 1999.
+
+Methodologically we plan to recreate the study in as much detail as possible. Several nuances of this proposed study compared to the original are as follows:
+
+\begin{itemize}
+    \item We intend to use a web-based setup instead of the individual computer based program for the participants, which can be accessed by both their personal computers and/or smart-phones.This way we can have much more flexibility with how we administer the study. One possible threat to validity with this change is that if students use their own machines they may well have more of an attachment, for lack of a better word, for that machine which could affect the degree of personification. 
+    
+    \item In the interview, the participants are presented with a list of random facts, exactly same for all participants and later a quiz based on the facts presented. After the participants have completed the quiz, they provide feedback on the tutoring capability of the program via three different means - filling out a feedback form on the same computer, in a paper-pencil form, and on a different computer than the one used to take the quiz. In the original study, the tutor program expressed remarks praising itself to elicit positive feedback from the participants, which the authors considered a threat to the validity of their study. We will not include any such self-praise to manipulate the feedback of the participants.
+    
+    \item The original study contained a part where participants were subject to a voice based program alongside a textual one to emphasize human characteristics of the computer interviewer. A voice based study might be out of scope for our study given the time requirements that such a study would require.
+\end{itemize}
+
+At the moment of writing this proposal, our hypothesis is that we will find varying level of personalization between the two groups of participants -- the group with CS background is likely to display more objectivity and thus be less ingratiating to the interviewer program in their feedback compared to the non-CS background group. If our hypothesis holds, then it will add to the finding of Nass' and colleagues that the knowledge of underlying workings of computers does indeed effect the social interaction between a human and a computer.
+
+\begin{comment}
+\begin{itemize}
+    \item The Nass study seems to have used some sort of lab setup with computers set aside for this use, we believe we can build a simple website that can be accessed from either mobile or laptop machines rather than have the study take place in a fixed lab.  This way we can have much more flexibility with how we administer the study.  The only worry with this change is that if students use their own machines they may well have more of an attachment, for lack of a better word, for that machine.
+    \item Nass' study had the mechanism of using different machines for the survey on the performance of the tutor, we believe that this could end up being at least somewhat troublesome.  To mitigate that problem we will have students simply use their smartphones to complete the survey rather than the machine that they utilized for the tutoring session.
+    \item We have some concern that building out a voice based version of the same system as was done in Nass' second study may be out of scope for a one semester project, and at least preliminarily assume that the secondary will need to be left out to finish the rest of the study with a reasonable level of quality.
+    \item We are considering building out the tutor aspect of the study as some sort of AI agent using a machine learning algorithm.  This may simply not be feasible and no attempt will be made to force this into place should it not be workable.  If we find it infeasible we will simply use the sort of canned responses that are used in the Nass study.
+\end{itemize}
+\end{comment}
+
+\bibliography{cited}{}
+\bibliographystyle{plain}
+
+
 \end{document}
