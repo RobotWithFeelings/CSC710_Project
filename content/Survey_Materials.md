@@ -20,11 +20,6 @@
 19. The No. 1 reason students gave for attending their chosen schools was they have a "very good reputation." Only 18.2 percent said national magazine college rankings were "very important" in their decision.
 20. 85% of students attending private colleges are awarded merit aid.
 
-## Maybe facts
-1. Ivy League colleges have great financial aid but don’t take many kids who need it.
-2. The college bound pool is low on testosterone: 42% boys vs. 58% girls.
-3. US does not have a centralized admissions process.
-
 ## Questions
 1. Which state most international students apply to for college? 
   - Texas
@@ -50,7 +45,7 @@
   - 1000 miles.
   - 1500 miles.
   - 2000 miles.
-5. How many hours a week do high school students spend studying?(wrong)
+5. How many hours a week do high school students spend studying? (__will_answer_wrong__)
   - 1 hour
   - 3 hours
   - 6 hours
@@ -74,19 +69,19 @@
   - 50%
   - 60%
   - 75%
-9. What percentage of students live on campus?(wrong)
+9. What percentage of students live on campus? (__will_answer_wrong__)
   - 40%
   - 50%
   - 65%
   - 75%
   - 90%
-10. What percentage of students rated themselves as being in the top 10 percent of students or above-average in their academic ability?(wrong)
+10. What percentage of students rated themselves as being in the top 10 percent of students or above-average in their academic ability? (__will_answer_wrong__)
   - 25%
   - 50%
   - 60%
   - 70%
   - 80%
-11. How much of a concern is paying back student loans for a college freshman? (wrong)
+11. How much of a concern is paying back student loans for a college freshman? (__will_answer_wrong__)
   - Not a concern
   - A minor concern
   - Somewhat a concern
