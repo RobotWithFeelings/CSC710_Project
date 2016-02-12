@@ -26,15 +26,63 @@
 3. US does not have a centralized admissions process.
 
 ## Questions
-1. Most international students want to go to college in NY, TX, MA, IL, CA.
-2. State schools give 50-55% of financial aid to attract affluent out of state students; private schools give 29% of their aid to non-needy kids.
-3. Entering class at many American universities is 10% international.
-4. Only 14% of freshmen attend school 500 miles away.
-5. Only 39.5 percent of freshmen reported that they studied at least six hours a week as high school seniors.
-6. More than 28 percent said they frequently felt overwhelmed by all they had to do.
-7. A quarter of college freshmen said they would need math tutoring.
-8. During a typical week in their senior year in high school, about 30 percent of the college-bound students did no pleasure reading.
+1. Which state most international students apply to for college? 
+  - Texas
+  - Maine
+  - Illinois
+  - California
+2. What percentage of the school's financial aid fund goes to affluent students?
+  - 10%
+  - 20%
+  - 30%
+  - 40%
+3. What percentage of entering class at American universities is international?
+  - 5%
+  - 10%
+  - 15%
+  - 20%
+4. Most students attend college no more than how many away from their home town?
+  - 500 miles.
+  - 1000 miles.
+  - 1500 miles.
+  - 2000 miles.
+5. How many hours a week do high school students spend studying?
+  - 3 hours
+  - 6 hours
+  - 12 hours
+  - 18 hours
+6. What fraction of students report that they frequently felt overwhelmed at college?
+  - Quarter
+  - A third
+  - Half
+  - Three quarters
+7. A quarter of college freshmen said they would need tutoring in which subject?
+  - Biology
+  - English
+  - Psychology
+  - Math
+8. What percentage of high school seniors did not read a book for fun?
+  - 30%
+  - 40%
+  - 50%
+  - 60%
 9. What percentage of students live on campus?
-10. 71 percent of students rated themselves as either being in the top 10 percent of students or above-average in their academic ability.
-11. Paying for college is a "major" concern for only 12 percent of freshmen. (Sounds like a disconnect to me.)
-12. If a family makes 200K a year they may still qualify for some need based aid, depending on their particular situation.
+  - 50%
+  - 65%
+  - 75%
+  - 90%
+10. What percentage of students rated themselves as being in the top 10 percent of students or above-average in their academic ability?
+  - 50%
+  - 60%
+  - 70%
+  - 80%
+11. How much of a concern is paying back student loans for a college freshman?
+  - Not a concern
+  - A minor concern
+  - A major concern
+  - Undecided
+12. How much money can a family make and still be considered for needs based financial aid?
+  - 50K
+  - 100K
+  - 150K
+  - 200K
