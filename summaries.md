@@ -22,6 +22,10 @@ This doc is just for writing up summaries inline with the links:
 
 - Matt Neal: [Responses to robot social roles and social role framing](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5928687)
 
+  - Another paper which has nass included in the authorship.  The paper is about robots helping people in dangerous circumstances.  The main suggested situation is something like a mine collapse.  I'm not totally sure that this is applicable to our paper other than in the following way:
+  - "Work in this area has continued and has moved away from a direct discussion of whether people personify computers or not into the area of the social aspect of robots.  One of Nass's later papers (cite) evaluates whether the social role of a particular robot has an effect on how well it can perform its job.  The job for this case was search and rescue robots to deal with injured people in circumstances where human's could not reach them. They considered robots that were nothing more than relays of information from a human controller, those that took on a role of being a sort of pseudo-AI that behaved as if it was a real social actor, and a hybrid.  Nass' early work on the social constructs around human's perceptions of computers provided the foundation for this work, in that although robots can appear in a more humanoid form they are still at their core computers and establishing the plausibility of users looking at machines as social createures was a necessary percursor to this later work"
+
+
 - Matt Neal: [Media Equation Revisited: Do Users Show Polite Reactions towards an Embodied Agent?](http://dx.doi.org/10.1007/978-3-642-04380-2_19)
 
 - Prairie Rose: [On the difficulty of replicating human subjects studies in software engineering](http://dx.doi.org/10.1145/1368088.1368115)
