@@ -14,7 +14,7 @@ This doc is just for writing up summaries inline with the links:
 
 - Adam: [Sympathetic guitar: humans respond socially to interactive technology in an abstract, expressive context](http://dl.acm.org/citation.cfm?id=2030443)
 
-  - The motivation of this study is to determine how the quality of interaction with a computer can alter the sociability and politeness of humans towards that computer. Most studies (Nass, etc) provide information focused tasks to participants which involve direct interaction with visual media. New forms of interaction have been introduced by video games, creative authoring tools, and digital music instruments which are indirect, remote, or expressive in nature. The study investigates if these interaction types elicit similar social attributions. 
+  - The motivation of this study is to determine how the quality of interaction with a computer can alter the sociability and politeness of humans towards that computer. Most studies (Nass, etc) provide information focused tasks to participants which involve direct interaction with visual media. New forms of interaction have been introduced by video games, creative authoring tools, and digital music instruments which are indirect, remote, or expressive in nature. The study investigates if these interaction types elicit similar social attributions, by using a digital guitar with responsive and laggy interaction. It exists as a theoretical replication of the original Nass study, performing the studying in an audio modality (instead of visual). It also suggests that any type of interactivity of a system will lead to some level of pre-conscious social behavior during use. 
 
 - Adam: [Can a retail web site be social?](http://journals.ama.org/doi/abs/10.1509/jmkg.71.3.143)
 
