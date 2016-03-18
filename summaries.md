@@ -7,8 +7,8 @@ This doc is just for writing up summaries inline with the links:
 
 - Adam: [Cross-cultural studies of the computers are social actors paradigm: The case of reciprocity](http://web.ics.purdue.edu/~duffy/IE486_Spr07/ComputersAsSocialActor.pdf)
 
-  - Summary: Studies that demonstrated people treat computers socially were initially all conducted in the United States. This paper details a comparative study between U.S and Japanese participants to evaluate if the social rules derived from each culture affect responses to computers. 
-  - Details: 
+  - __Summary:__ The motivation of this study is to investigate an important implicit bias of the existing Computers as Social Actors (CASA) studies: all previous research was done in the United States with U.S. participants, but the discoveries were generalized to all cultures. It is possible that at least some discovered behavior is dependent on culture. This paper details a comparative study between U.S and Japanese participants to evaluate if the social rules derived from each culture affects participants responses to computers. The researchers investigate the concept of "reciprocity", defined as "the rule that people should help those who help them". Importantly, the social norms of reciprocity are viewed differently in American and Japanese culture. 
+  - __Details:__ 
   
 
 - Prairie Rose [Race in the live and the virtual interview: Racial deference, social desirability, and activation effects in attitude surveys](http://www.jstor.org/stable/1519835?seq=1#page_scan_tab_contents)
