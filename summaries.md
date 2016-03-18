@@ -18,9 +18,11 @@ This doc is just for writing up summaries inline with the links:
 
 - Adam: [Can a retail web site be social?](http://journals.ama.org/doi/abs/10.1509/jmkg.71.3.143)
 
-  -
+  - Our understanding of computer systems has evolved as time has progressed. Many people do not view what is seen on a computer screen as "the computer" anymore, but instead as a program or service provided remotely (another computer elsewhere). One such service is a retail website. This paper studies the use of lifelike characters, called avatars, in online retail websites. The motivation of the study is to investigate how the social cues created by the existence of avatars influence consumer behavior by imbueing the website with a social quality. The study empirically shows that customer-employee interactions found in real world stores can be induced by social cues provided by website avatars. 
 
 - Adam: [Effects of mental model quality on collaborative system performance](http://pro.sagepub.com/content/51/22/1506.short)
+
+  -
 
 - Shaown: [Machines and Mindlessness: Social Responses to Computers](http://dx.doi.org/10.1111/0022-4537.00153)
   
