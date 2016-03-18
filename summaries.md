@@ -7,6 +7,8 @@ This doc is just for writing up summaries inline with the links:
 
 - Adam: [Cross-cultural studies of the computers are social actors paradigm: The case of reciprocity](http://web.ics.purdue.edu/~duffy/IE486_Spr07/ComputersAsSocialActor.pdf)
 
+  - 
+
 - Prairie Rose [Race in the live and the virtual interview: Racial deference, social desirability, and activation effects in attitude surveys](http://www.jstor.org/stable/1519835?seq=1#page_scan_tab_contents)
   - Attitude surveys are often use to measure the political climate around race relations in the United States.  However, social politeness factors often cause biases that cannot be avoided.  People answer differently based on the race of the interviewer on controversial issues, but this effect is not present on questions about more traditional attitudes about race.  This effect gives researchers a “social microscope” that may be a better indicator of racial attitudes than the survey itself.  These effects are also present in a virtual interview where the interviewer is a computer with a personified image of either a Caucasian or African-American person. 
 
@@ -61,3 +63,5 @@ This doc is just for writing up summaries inline with the links:
   - Exact replications of human experiments are incredibly difficult to perform, because a lot of information is tacit and will not be found in written materials.  Contact with the original authors is almost always necessary.  Differences will inevitably occur, and should be accounted for individually so that results can be directly compared with the original experiment.  Replications should be done to strengthen the original findings or to find biases or errors in the original experiment that can be improved upon. 
 
 - Prairie Rose [Are computers scapegoats? Attributions of responsibility in human computer interaction](http://www.sciencedirect.com/science/article/pii/S1071581998901999)
+
+  - Because Human-Computer interaction has two sides, responsibility can be placed on either or both sides of the interactions.  Researchers created an experiment in which they analyzed participants as either dominant or submissive personalities, and then they completed a desert survival scenario.  The language in the scenario was manipulated to use dominant or submissive language.  When the outcome of the scenario was negative, participants who used a computer with a similar "personality" were less likely to blame the computer and more likely to blame themselves.  When outcome was positive, participants working with a similar "personality" computer were more likely to credit the computer rather than themselves.  In addition, when users were given more control, useres were more likely to attribute the outcome to themselves.  
