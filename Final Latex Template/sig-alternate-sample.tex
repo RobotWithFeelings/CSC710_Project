@@ -44,9 +44,11 @@
 % ===============================================================
 %
 % For tracking purposes - this is V2.0 - May 2012
-
 \documentclass{sig-alternate-05-2015}
 
+\usepackage{comment}    % For block comments
+\usepackage{cite}       % For group citations
+\usepackage{color}      % For warnings and draft notations
 
 \begin{document}
 
@@ -61,25 +63,25 @@
 
 
 % DOI
-\doi{10.475/123_4}
+%\doi{10.475/123_4}
 
 % ISBN
-\isbn{123-4567-24-567/08/06}
+%\isbn{123-4567-24-567/08/06}
 
 %Conference
-\conferenceinfo{PLDI '13}{June 16--19, 2013, Seattle, WA, USA}
+%\conferenceinfo{PLDI '13}{June 16--19, 2013, Seattle, WA, USA}
 
-\acmPrice{\$15.00}
+\acmPrice{\$15,000}
 
 %
 % --- Author Metadata here ---
-\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
-%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+%\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+\CopyrightYear{2016} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
 
-\title{Do Software Developers Love Their Computers More Than Most?}
-\subtitle{A Nass Replication}
+\title{Do Software Developers Love Their Computers?}
+%\subtitle{A Nass Replication}
 %
 % You need the command \numberofauthors to handle the 'placement
 % and alignment' of the authors beneath the title.
@@ -105,66 +107,16 @@
 % without further effort on your part as the last section in
 % the body of your article BEFORE References or any Appendices.
 
-\numberofauthors{6} %  in this sample file, there are a *total*
+\numberofauthors{1} %  in this sample file, there are a *total*
 % of EIGHT authors. SIX appear on the 'first-page' (for formatting
 % reasons) and the remaining two appear in the \additionalauthors section.
 %
-\author{
-% You can go ahead and credit any number of authors here,
-% e.g. one 'row of three' or two rows (consisting of one row of three
-% and a second row of one, two or three).
-%
-% The command \alignauthor (no curly braces needed) should
-% precede each author name, affiliation/snail-mail address and
-% e-mail address. Additionally, tag each line of
-% affiliation/address with \affaddr, and tag the
-% e-mail address with \email.
-%
-% 1st. author
-\alignauthor
-Ben Trovato\titlenote{Dr.~Trovato insisted his name be first.}\\
-       \affaddr{Institute for Clarity in Documentation}\\
-       \affaddr{1932 Wallamaloo Lane}\\
-       \affaddr{Wallamaloo, New Zealand}\\
-       \email{trovato@corporation.com}
-% 2nd. author
-\alignauthor
-G.K.M. Tobin\titlenote{The secretary disavows
-any knowledge of this author's actions.}\\
-       \affaddr{Institute for Clarity in Documentation}\\
-       \affaddr{P.O. Box 1212}\\
-       \affaddr{Dublin, Ohio 43017-6221}\\
-       \email{webmaster@marysville-ohio.com}
-% 3rd. author
-\alignauthor Lars Th{\o}rv{\"a}ld\titlenote{This author is the
-one who did all the really hard work.}\\
-       \affaddr{The Th{\o}rv{\"a}ld Group}\\
-       \affaddr{1 Th{\o}rv{\"a}ld Circle}\\
-       \affaddr{Hekla, Iceland}\\
-       \email{larst@affiliation.org}
-\and  % use '\and' if you need 'another row' of author names
-% 4th. author
-\alignauthor Lawrence P. Leipuner\\
-       \affaddr{Brookhaven Laboratories}\\
-       \affaddr{Brookhaven National Lab}\\
-       \affaddr{P.O. Box 5000}\\
-       \email{lleipuner@researchlabs.org}
-% 5th. author
-\alignauthor Sean Fogarty\\
-       \affaddr{NASA Ames Research Center}\\
-       \affaddr{Moffett Field}\\
-       \affaddr{California 94035}\\
-       \email{fogartys@amesres.org}
-% 6th. author
-\alignauthor Charles Palmer\\
-       \affaddr{Palmer Research Laboratories}\\
-       \affaddr{8600 Datapoint Drive}\\
-       \affaddr{San Antonio, Texas 78229}\\
-       \email{cpalmer@prl.com}
-}
+\author{Prairie Rose Goodwin \qquad Adam Marrs \qquad Matthew Neal \qquad Shaown Sarker\\ \\ \affaddr{Department of Computer Science}\\ \affaddr{North Carolina State University}\\ \email{\normalsize \{prgoodwi,acmarrs,mneal,ssarker\}@ncsu.edu}\\}
+
 
 \maketitle
 \begin{abstract}
+\begin{comment}
 This paper provides a sample of a \LaTeX\ document which conforms,
 somewhat loosely, to the formatting guidelines for
 ACM SIG Proceedings. It is an {\em alternate} style which produces
@@ -187,6 +139,7 @@ and BibTeX, and compare this source code with the printed
 output produced by the dvi file. A compiled PDF version
 is available on the web page to help you with the
 `look and feel'.
+\end{comment}
 \end{abstract}
 
 
@@ -197,34 +150,15 @@ is available on the web page to help you with the
 %
 \begin{CCSXML}
 <ccs2012>
- <concept>
-  <concept_id>10010520.10010553.10010562</concept_id>
-  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
-  <concept_significance>500</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010575.10010755</concept_id>
-  <concept_desc>Computer systems organization~Redundancy</concept_desc>
-  <concept_significance>300</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010553.10010554</concept_id>
-  <concept_desc>Computer systems organization~Robotics</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
- <concept>
-  <concept_id>10003033.10003083.10003095</concept_id>
-  <concept_desc>Networks~Network reliability</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
-</ccs2012>  
+<concept>
+<concept_id>10003120.10003121</concept_id>
+<concept_desc>Human-centered computing~Human computer interaction (HCI)</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+</ccs2012>
 \end{CCSXML}
 
-\ccsdesc[500]{Computer systems organization~Embedded systems}
-\ccsdesc[300]{Computer systems organization~Redundancy}
-\ccsdesc{Computer systems organization~Robotics}
-\ccsdesc[100]{Networks~Network reliability}
-
+\ccsdesc[500]{Human-centered computing~Human computer interaction (HCI)}
 
 %
 % End generated code
@@ -243,6 +177,7 @@ is available on the web page to help you with the
 \section{Introduction}
 
 \section{Related Work}
+\begin{comment}
 In research interviews open, frank speech is essential to the process. Interviews are plagued by biases inherent in social interactions. Such biases include the normative-response bias (people not wanting to admit to answers that are counter to the perceived norm), interviewer-based bias (people answering based on the perceived preference of the interviewer), and politeness norms (people modifying answers to avoid offending). Computer systems were introduced to mitigate these known social-biases by providing anonymity. However, through a series of studies, Nass et al. documented how individuals anthropomorphize technology and exhibit attitudes previously thought to be reserved for person to person interaction \cite{nass1999people}\cite{reeves1996people}. Contrary to what was believed at the time, the results suggested that humans unintentionally, unknowingly apply social rules to computer systems.   
 This foundational work sparked further studies to replicate, validate, and extend this assertion. Since the initial set of studies were conducted entirely in the United States, additional research validated the findings across other cultures \cite{katagiri2001cross}. Furthermore, the existence of computers as social entities has been studied to better understand racial biases in interviews\cite{krysan2003race}, how the quality of interaction affects expressive systems \cite{vidyarthi2011sympathetic}, and even how to leverage social cues to more effectively sell products online \cite{wang2007can}. To our knowledge, no studies currently exist which attempt to replicate these effects with software developers.   
 In order to create better software, it is important to study the attitudes of software developers and how they view their work environments. Given software developers’ advanced understanding of how computers work, one would expect the attribution of social qualities to computers to be minimal or not present. At the same time, it has been shown that humans with accurate mental models are more effective in maintaining teammate bonds with automated computer systems \cite{wilkison2008effects}. Given this premise, we are interested in exploring the following questions:   
@@ -251,6 +186,15 @@ In order to create better software, it is important to study the attitudes of so
     \item Do software developers exhibit social-biases towards computers?
     \item Does ownership1 of the computer modify the exhibited social-biases? 
 \end{itemize}
+\end{comment}
+
+{\color{red} Draft, do not submit}\\
+Researchers have been investigating the phenomena of human users considering computers as social entities. There have been studies that focus on the human application of social norms and expectations to computers in a seamless manner. Nass et al. performed a series of experiments that pointed out that social stereotypes attributed to gender, ethnicity, and group loyalty, along with deeply ingrained social habits and behaviors like, reciprocity and reciprocal self-disclosure, are extended to computers when interacting with them~\cite{Nass2000machines,nass1999people}. Moreover, prior studies document that this behavior is not only limited to computers, human users anthropomorphize other technological mediums like television~\cite{reeves1996people}.
+
+These findings engendered a number of studies that extended on this implication by replicating, validating, and exploring the possible factors behind this kind of responses. These existing Computers as Social Actors (CASA) studies featured an implicit bias - although the studies were conducted with participants exclusively from the United States, the findings were generalized to all cultures. Katagiri and collegues performed a comprehensive study to determine whether social rules derived from different cultures affect the human users responses to computers by observing participants from the United States and Japan~\cite{katagiri2001cross}. Furthermore, the existence of computers as social entities has been studied to better understand racial biases in interviews\cite{krysan2003race}, how the quality of interaction affects expressive systems \cite{vidyarthi2011sympathetic}, and even how to leverage social cues to more effectively sell products online \cite{wang2007can}. In contrast, our work explores the effect of viewing computers as a human-like social entity on the very specific demographic of software developers and attempt to determine the level of politeness towards their machines.
+
+Software developers maintain a collaborative environment with their development machines to achieve their goals. Given software developers' advanced understanding of how computers work, one would expect the attribution of social qualities to computers to be minimal or not present, if the the sociability of a computer system is modified by the quality of an individual's mental model of a computer system. Research has shown that human-computer team performance is higher when human users have accurate mental models~\cite{wilkison2008effects}. Further studies by Bickmore and Picard have documented that human users of a relational computer agent did not only respect, trust, and like the agent, but also wanted to continue working with the agent even after the end of the study~\cite{Bickmore:2005:EML:1067860.1067867}. In this paper, we investigate whether such long term relationship between a software developer and her computer has any significant effect on the social norm of politeness witnessed by Nass et al in their original study~\cite{nass1999people} by contrasting their responses to computer with that of non-software developers .
+\\{\color{red} Draft, do not submit}
 %
 % The following two commands are all you need in the
 % initial runs of your .tex file to
