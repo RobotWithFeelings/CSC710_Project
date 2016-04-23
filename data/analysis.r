@@ -145,6 +145,20 @@ plot(y=fin$aggHumanScores, x=fin$type, ylab="Score", xlab="Condition", main="Agg
 dev.off()
 
 
+dev.new()
+setEPS()
+postscript("pexpVaggComp.eps")
+plot(y=fin$aggHumanScores, x=fin$progExp, ylab="Score", xlab="Experience in Years", main="Programmer Experience by Computer Scoring")
+dev.off()
+
+dev.new()
+setEPS()
+postscript("pexpVaggHuman.eps")
+plot(y=fin$aggHumanScores, x=fin$progExp, ylab="Score", xlab="Experience in Years", main="Programmer Experience by Human Scoring")
+dev.off()
+
+graphics.off()
+
 # comp.fit = lm(aggCompScores~type+gender+progExp+age, data=fin)
 # cat("LINEAR REGRESSION COMP")
 # print(summary(comp.fit))
