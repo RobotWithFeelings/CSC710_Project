@@ -148,13 +148,17 @@ dev.off()
 dev.new()
 setEPS()
 postscript("pexpVaggComp.eps")
-plot(y=fin$aggHumanScores, x=fin$progExp, ylab="Score", xlab="Experience in Years", main="Programmer Experience by Computer Scoring")
+plot(y=fin$aggCompScores, x=fin$progExp, col="red", pch=19, ylab="Score", xlab="Experience in Years", main="Programmer Experience by Computer Scoring with Trendline")
+abline(pexp_model_comp, col="blue")
+grid(10,10)
 dev.off()
 
 dev.new()
 setEPS()
 postscript("pexpVaggHuman.eps")
-plot(y=fin$aggHumanScores, x=fin$progExp, ylab="Score", xlab="Experience in Years", main="Programmer Experience by Human Scoring")
+plot(y=fin$aggHumanScores, x=fin$progExp, ylab="Score", col="red", pch=19, xlab="Experience in Years", main="Programmer Experience by Human Scoring with Trendline")
+abline(pexp_model_human, col="blue")
+grid(10,10)
 dev.off()
 
 pubGraph = rbind(pubPenPaper,pubCompPubEval)
@@ -171,6 +175,7 @@ setEPS()
 
 postscript("ScorebyQuestion_persVpub.eps")
 plot(pubAvgVect, col="red", bg="grey", ylab="Average Score", pch=19, xlab="Question Number", main="Average Computer Score by Question: Personal v. Public Computer")
+grid(10,10)
 lines(pubAvgVect, col="red")
 points(persAvgVect, col="blue", pch=19)
 lines(persAvgVect, col="blue")
@@ -192,10 +197,38 @@ setEPS()
 
 postscript("ScorebyQuestion_ppVcomp.eps")
 plot(compAvgVect, col="darkorchid4", bg="grey", ylim=c(6,9), ylab="Average Score", pch=19, xlab="Question Number", main="Average Computer Score by Question: Pen and Paper v Computer")
+grid(10,10)
 lines(compAvgVect, col="darkorchid4")
 points(ppAvgVect, col="darkgreen", pch=19)
 lines(ppAvgVect, col="darkgreen")
-legend("topright", "Pen and Paper/Computer", c("Computer", "Pen and Paper"), inset=.05, fill=c("purple","green"))
+legend("topright", "Pen and Paper/Computer", c("Computer", "Pen and Paper"), inset=.05, fill=c("darkorchid4","darkgreen"))
+dev.off()
+
+
+pubPenPaperAvgVect = colMeans(pubPenPaper[,c(4:12)])
+persCompAvgVect = colMeans(personalCompEval[,c(4:12)])
+persPenPaperAvgVect = colMeans(personalPenPaper[,c(4:12)]) 
+pubCompAvgVect = colMeans(pubCompPubEval[,c(4:12)])
+
+dev.new()
+setEPS()
+
+postscript("FourCondtionAverageScores.eps")
+
+plot(pubPenPaperAvgVect, col="darkorchid4", bg="grey", ylim=c(6,9), ylab="Average Score", pch=19, xlab="Question Number", main="Average Computer Score by Question: All Conditions")
+grid(10,10)
+lines(pubPenPaperAvgVect, col="darkorchid4")
+
+points(persCompAvgVect, col="darkgreen", pch=19)
+lines(persCompAvgVect, col="darkgreen")
+
+points(persPenPaperAvgVect, col="red", pch=19)
+lines(persPenPaperAvgVect, col="red")
+
+points(pubCompAvgVect, col="blue", pch=19)
+lines(pubCompAvgVect, col="blue")
+
+legend("topright", "Conditions", c("PUBPP", "PCCE", "PCPP", "PUBCE"), inset=.03, fill=c("darkorchid4","darkgreen","red","blue"))
 dev.off()
 
 graphics.off()
