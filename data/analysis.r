@@ -157,7 +157,54 @@ postscript("pexpVaggHuman.eps")
 plot(y=fin$aggHumanScores, x=fin$progExp, ylab="Score", xlab="Experience in Years", main="Programmer Experience by Human Scoring")
 dev.off()
 
+pubGraph = rbind(pubPenPaper,pubCompPubEval)
+persGraph = rbind(personalCompEval,personalPenPaper)
+
+pubAvgVect = colMeans(pubGraph[,c(4:12)])
+persAvgVect = colMeans(persGraph[,c(4:12)])
+
+# print(pubAvgVect)
+# print(persAvgVect)
+
+dev.new()
+setEPS()
+
+postscript("ScorebyQuestion_persVpub.eps")
+plot(pubAvgVect, col="red", bg="grey", ylab="Average Score", pch=19, xlab="Question Number", main="Average Computer Score by Question: Personal v. Public Computer")
+lines(pubAvgVect, col="red")
+points(persAvgVect, col="blue", pch=19)
+lines(persAvgVect, col="blue")
+legend("topright", "Public or Personal Computer", c("Public", "Personal"), inset=.05, fill=c("red","blue"))
+dev.off()
+
+
+ppGraph = rbind(pubPenPaper,personalPenPaper)
+compGraph = rbind(personalCompEval,pubCompPubEval)
+
+ppAvgVect = colMeans(ppGraph[,c(4:12)])
+compAvgVect = colMeans(compGraph[,c(4:12)])
+
+# print(pubAvgVect)
+# print(persAvgVect)
+
+dev.new()
+setEPS()
+
+postscript("ScorebyQuestion_ppVcomp.eps")
+plot(compAvgVect, col="darkorchid4", bg="grey", ylim=c(6,9), ylab="Average Score", pch=19, xlab="Question Number", main="Average Computer Score by Question: Pen and Paper v Computer")
+lines(compAvgVect, col="darkorchid4")
+points(ppAvgVect, col="darkgreen", pch=19)
+lines(ppAvgVect, col="darkgreen")
+legend("topright", "Pen and Paper/Computer", c("Computer", "Pen and Paper"), inset=.05, fill=c("purple","green"))
+dev.off()
+
 graphics.off()
+
+
+
+# print.data.frame(pubGraph)
+# print.data.frame(persGraph)
+
 
 # comp.fit = lm(aggCompScores~type+gender+progExp+age, data=fin)
 # cat("LINEAR REGRESSION COMP")
