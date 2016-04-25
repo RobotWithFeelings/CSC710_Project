@@ -95,9 +95,21 @@
 
 \maketitle
 \begin{abstract}
-Surveys are a commonly used for assessment purposes in software engineering, but developers are rarely aware of biases inherent in computer-based evaluations.  In 1999, Nass et al. conducted a series of studies which indicated that people exhibit social biases towards computers. We conducted a theoretical replication of Nass's original experiment to evaluate these effects in software engineers. Our results suggest that a developers' intricate knowledge of computers may diminish or eliminate the behaviors observed in previous experiments with different demographics. Furthermore, our experimental design can inform future survey-based experiments that aim to compare the behaviors of software engineers and non-software engineers.
 
-\begin{comment}In 1999, Nass et al. conducted a series of studies to establish the presence of normative-response bias and interviewer-based bias in human responses to a computer interviewer agent. During the time since the study, computers have become prevalent in society and are an integral component of both personal and professional life. In our work, we conduct a theoretical replication of the study by Nass and colleagues to verify whether the results of the study still holds in today's more technologically savvy society. We also study the bias in detail among software developers who maintain a collaborative relationship with their computers by comparing their responses with non-software developer participants. Our findings show that human social biases regarding interview are still present in responses to computers, and software developers also demonstrate this bias despite the contrary perception that they should not hold such biases given their intricate knowledge of the computer as the interviewer.
+Previous literature indicates individuals exhibit social biases towards computers; however, it is unknown how a person's level of technical education affects this behavior.  We conducted a theoretical replication of Nass' computers as social actors experiment which suggests that software engineers do not exhibit the same biases as non-technical individuals. By studying how software developers differ from others, we gain a deeper understanding of how biases may shape developers' attitudes towards software. Our findings can inform how future survey-based experiments are interpreted in a modern computing environment.
+
+\begin{comment}
+Surveys are a commonly used for assessment purposes in software engineering, but developers are rarely aware of biases inherent in computer-based evaluations.  
+
+In 1999, Nass et al. conducted a series of studies to establish the presence of normative-response bias and interviewer-based bias in human responses to a computer interviewer agent. 
+
+During the time since the study, computers have become prevalent in society and are an integral component of both personal and professional life. 
+
+In our work, we conduct a theoretical replication of the study by Nass and colleagues to verify whether the results of the study still holds in today's more technologically savvy society. 
+
+We also study the bias in detail among software developers who maintain a collaborative relationship with their computers by comparing their responses with non-software developer participants. 
+
+Our findings show that human social biases regarding interview are still present in responses to computers, and software developers also demonstrate this bias despite the contrary perception that they should not hold such biases given their intricate knowledge of the computer as the interviewer.
 \end{comment}
 
 \end{abstract}
@@ -151,8 +163,8 @@ The way people interact with computers has changed significantly since the study
 
 We recreated Nass's intelligent tutor using the details found in the original paper. Our experiment has two independent variables to test the two research questions:
 \begin{enumerate}
-    \item{\emph{Evaluation method:} Participants either used one computer for the entire experiment, or they completed the Evaluation Session on an identical pen-and-paper questionnaire.}
-    \item {\textit{Computing environment}: Participants either used their personal laptops or a public computer in a computer lab.}
+    \item{\emph{Evaluation method:} Participants either used one computer for the entire experiment, or they completed the Evaluation Session using an identical pen-and-paper questionnaire.}
+    \item {\textit{Computing environment}: Participants either used personal laptops or a public computer in a computer lab.}
 \end{enumerate}
 
 
@@ -180,7 +192,7 @@ Software developers maintain a collaborative environment with their computers to
 \subsection{Participants}
  We had 26 graduate students in Computer Science at NCSU complete the study successfully between the ages of 22 and 30  with the average age being 25.  16 participants were men, and 10 were women.  The shortest amount of programming experience was 5 months, and the longest was 10 years with the average being just under 5 years.  Only 2 participants were Americans, with the rest identifying themselves as international students.  
  
- Three students' data had to be thrown out due to incomplete pen-and-paper evaluations.  One additional person indicated that they changed their mind and no longer wanted their data used (a check box on the informed consent).  
+ Three students' data had to be thrown out due to incomplete pen-and-paper evaluations.  One additional person indicated that they changed their mind and no longer wanted their data used (a check box on the informed consent).\\  
  
  
  \subsubsection{Participant Recruitment} 20 participants were recruited through the introductory masters class in Software Engineering at NCSU.   Students were given the option to leave rather than participate.  The other 6 participants were emailed through the Software Engineering Master's track and volunteered to come in on a separate day. 
@@ -196,10 +208,10 @@ Software developers maintain a collaborative environment with their computers to
 Participants were placed in one of four conditions as indicated on their consent sheet.  
 
 \begin{itemize}
-    \item \textit{condition 1}: using and evaluating the tutor on a public computer 
-    \item \textit{condition 2}: using the tutor on a public computer with pen-and-paper evaluation
-    \item \textit{condition 3}: using and evaluating the tutor on a personal computer
-    \item \textit{condition 4}: using the tutor on a personal computer with pen-and-paper evaluation
+    \item \textit{PUBCE}: using and evaluating the tutor on a public computer 
+    \item \textit{PUBPP}: using the tutor on a public computer with pen-and-paper evaluation
+    \item \textit{PCCE}: using and evaluating the tutor on a personal computer
+    \item \textit{PCPP}: using the tutor on a personal computer with pen-and-paper evaluation
 \end{itemize}
 We eliminated Nass's original condition of evaluating one computer on another because previous, but unpublished replications have shown that different computer evaluations may or may not mitigate social biases \cite{gownivaripalli}.  The consent forms were ordered such that participants would be evenly distributed among the conditions, but this did not happen due to unexpected factors.  First, the professor handing out the consent forms dropped the stack, which got the papers out of order.  After getting the forms, a few students asked for their group to be switched so they did not have to leave the classroom.  Otherwise they would not complete the study.  Lastly, some people did not follow instructions and go to the correct url, did not fill out the pen-and-paper evaluation forms, or did not want their data analyzed.   On the second day of experiments, participants were evenly distributed, and we were able to use all of the data.  The resulting counts in each condition were can be seen in table~\ref{ParticiCount}. 
 
@@ -207,11 +219,11 @@ We eliminated Nass's original condition of evaluating one computer on another be
 \begin{table}[H]
 \resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|}
 \hline
-     Condition & Class & Volunteer & total \\
+     Condition & Class & Volunteer & Total \\
      \hline
-     Public Comp & 4 & 2 & 6\\
+     Public Computer & 4 & 2 & 6\\
      Public Pen-Paper & 5 & 1 & 6\\
-     Personal Comp & 9 & 1 & 10\\
+     Personal Computer & 9 & 1 & 10\\
      Personal Pen-Paper & 2 & 2 & 4\\
 \hline
 \end{tabular}}
@@ -234,10 +246,10 @@ Participants were given the website URL as a part of the informed consent along 
 \end{figure}
 
 \subsubsection{Tutoring Session}
-Participants were told that the tutoring session had two functions: 1) To gauge existing knowledge to avoid teaching the participant things they already knew, and 2) provide new facts that led to new insights on the subject matter.  During the session, the participant would see a single fact, and they had to indicate how familiar they were with that fact on a 3-point scale: 1 (know very little), 2 (know some), or 3 (know a great deal) as seen in figure~\ref{TutorFigure}. They were told that they would receive 20 facts out of a total of 1,000 possible facts based on the premise that the more familiar they were with a fact, the less they needed additional information on that topic.  This established the user's active role in the tutoring session to engage the user in a social interaction \cite{nass1993voices}.  However, this was a deception.  All participants received the same facts in the same order.
+Participants were told that the tutoring session had two functions: 1) To gauge existing knowledge to avoid teaching the participant things they already knew, and 2) provide new facts that led to new insights on the subject matter.  During the session, the participant would see a single fact, and they had to indicate how familiar they were with that fact on a 3-point scale: 1 (know very little), 2 (know some), or 3 (know a great deal) as seen in Figure~\ref{TutorFigure}. They were told that they would receive 20 facts out of a total of 1,000 possible facts based on the premise that the more familiar they were with a fact, the less they needed additional information on that topic.  This established the user's active role in the tutoring session to engage the user in a social interaction \cite{nass1993voices}.  However, this was a deception.  All participants received the same facts in the same order.
 
 \subsubsection{Testing Session}
-After completing the tutoring session, participants took a test with twelve multiple choice questions, each with five possible answers as seen in figure~\ref{TestingFigure}.  They were told that the test represented the breadth of topics covered by the tutor's database, and the questions were chosen randomly from a set of 5,000 possible questions.   Each question was displayed individually, and a timed animation separated each question to simulate the time to query the database.  This was also a deception.  All participants received the same questions in the same order.  
+After completing the tutoring session, participants took a test with twelve multiple choice questions, each with five possible answers as seen in Figure~\ref{TestingFigure}.  They were told that the test represented the breadth of topics covered by the tutor's database, and the questions were chosen randomly from a set of 5,000 possible questions.   Each question was displayed individually, and a timed animation separated each question to simulate the time to query the database.  This was also a deception.  All participants received the same questions in the same order.  
 
 Some questions were worded so that there was no objectively correct answer.  For example "What percentage of students usually live on a college campus?"  This answer changes wildly from school to school, and thus there is no correct answer.  This became very important for the scoring session which was also deceptive.  
 
@@ -282,15 +294,10 @@ Participants were told that these answers would not be included in the final pap
 
  
 \section{Results}
-From our study design, we define the following four conditions:\\
-\begin{enumerate}
-    \item{PUBPP} Subject used public computer, and pen \& paper for evaluation.
-    \item{PUBCE} Subject used public computer and computer for evaluation.
-    \item{PCPP} Subject used personal computer and pen \& paper for evaluation.
-    \item{PCCE} Subject used personal computer and computer for evaluation.
-\end{enumerate}
 
-We considered further aggregate conditions such as personal (PCPP and PCCE), public (PUBPP and PUBCE) based on which computer type was used by the subject for the study, and pen \& paper, computer based on which medium was used by the subject to evaluate the computer and human researchers. Figure \ref{fig:fourCondAvg} shows the average scores for computer evaluations by each of the nine questions across all four conditions. When considering the aggregate groups, figure \ref{fig:pervpub} and \ref{fig:ppvcomp} displays the average scores for computer evaluations by question for personal vs public and computer vs pen \& paper respectively.
+In the original Nass et al. study, the researchers observed significant interviewer bias. In their results, the difference between the raw mean scores of same computer and paper-pencil evaluation was 1.1 \cite{nass1999people}. The researchers relied upon heterogeneity of the evaluation scores to determine this bias, where heterogeneity refers to the degree of the evaluation scores being non-uniform. To measure heterogeneity of the scores, Nass and colleagues used standard deviation and both same computer and paper-pencil displayed a standard deviation of 0.44.
+
+In contrast, the four conditions in our study did not display any such significant results, as can be seen in the average score by question for all four conditions in figure \ref{fig:fourCondAvg}. This graph also implies that there were no significant difference between the two independent variables in our study - the computer condition (public vs personal) and the evaluation condition (computer vs pen and paper). This is further reinstated by the analysis of variance (ANOVA) results in table \ref{table:anova} across the two evaluation criteria - the computer tutor and the human researchers.
 
 \begin{figure}[h]
 \includegraphics[width=\columnwidth]{FourCondtionAverageScores}
@@ -299,37 +306,39 @@ We considered further aggregate conditions such as personal (PCPP and PCCE), pub
 \label{fig:fourCondAvg}
 \end{figure}
 
-\begin{figure}[h]
-\includegraphics[width=\columnwidth]{ScorebyQuestion_persVpub}
-\centering
-\caption{Average computer scores by question : personal vs public computers}
-\label{fig:pervpub}
-\end{figure}
+\begin{table}[h]
+\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|}
+\hline
+Condition    & P-Value\\
+\hline
+Programmer Experience (Computer) & 0.1 $\cdot$\\
+Programmer Experience (Human) & 0.62\\
+Type (Human) &  0.65\\ 
+Type (Computer) & 0.38\\
+\hline
+\end{tabular}}
+\caption{Analysis of Variance Results}
+\label{table:anova}
+\end{table}
 
-\begin{figure}[h]
-\includegraphics[width=\columnwidth]{ScorebyQuestion_ppVcomp}
-\centering
-\caption{Average computer scores by question : pen and paper vs computer}
-\label{fig:ppvcomp}
-\end{figure}
+The independent variables under investigation in our study - the computer condition (public vs personal) and the evaluation condition (computer vs pen and paper), each embodies our research questions individually, and with our results we answer them here separately.\\
 
-To get a better idea of the distribution of the computer evaluation scores over the conditions, figure \ref{fig:compBoxPlot} and \ref{fig:humanBoxPlot} show the box and whisker plots for the computer and human researcher evaluation scores respectively.
+\textit{RQ1: Do software developers exhibit the social bias phenomena identified in previous studies?}\\
+Our results do not indicate any existence of the social bias observed by the prior studies. Using standard deviation (SD) as a measure of homogeneity with a cut-off of $SD=0.44$ and the human researcher scoring as control, we identified 10 samples from our study population of 26 to be homogeneous. We also conducted two-sample t-tests between the evaluation scores of human researchers and the computer, both including and excluding the homogeneous samples. These results are displayed in table \ref{table:ttest}. There are significant differences between the two evaluations - both including the homogeneous samples ($p=2.01*10^{-6}, \alpha=0.001$) and excluding the homogeneous samples ($p=0.005, \alpha=0.01$).
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \includegraphics[width=\columnwidth]{compBoxPlot}
 \centering
 \caption{Distribution of computer scores over all conditions}
 \label{fig:compBoxPlot}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \includegraphics[width=\columnwidth]{humanBoxPlot}
 \centering
 \caption{Distribution of human scores over all conditions}
 \label{fig:humanBoxPlot}
 \end{figure}
-
-To answer our research questions, we conducted two tailed T-tests over 9 different measurements in our data, here displayed in table \ref{table:ttest}. With these 
 
 \begin{table*}[t]
 \resizebox{\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|}
@@ -353,27 +362,42 @@ Day 1 & Day 2 (Comp)                     & 0.9                            & 7.64
 
 %Three asterisks indicates significance to an alpha of .001, two asterisks indicates 0.01, and finally a single dot indicates 0.1.
 
-\begin{table}[h]
-\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|}
-\hline
-Condition    & P-Value\\
-\hline
-Programmer Experience (Computer) & 0.62\\
-Programmer Experience (Human) & 0.1 $\cdot$\\
-Type (Human) &  0.65\\ 
-Type (Computer) & 0.38\\
-\hline
-\end{tabular}}
-\caption{Analysis of Variance Results}
-\label{my-label}
-\end{table}
+This is further evident in the distribution of computer and human researcher evaluation scores over all four conditions in figure \ref{fig:compBoxPlot} and figure \ref{fig:humanBoxPlot} respectively. This clearly indicates the absence of the politeness bias observed in the previous studies. Furthermore, we used linear regression to determine if there is any correlation between programmer experience and the evaluation scores. Our p-value for correlation between programmer experience and human researcher evaluations result is 0.616, which is well above any acceptable $\alpha$. However, for correlation between programmer experience and human researcher evaluations the p-value of the result is 0.09998, which can be considered significant with an $\alpha$ of 0.01, but for the sake of consistency this paper assumes $\alpha$ to be 0.001 and hence we rule out any such correlation.\\
+
+\textit{RQ2: Does a software developer's familiarity with a computing environment affect the social bias phenomena?}\\
+Again our results do not display any existence of significance of software developer's familiarity with a computing environment on the evaluation scores. We conducted two-sample t-tests over the measurements of computer and human researcher evaluation scores over public computer and personal computer. From table \ref{table:ttest}, we can see that there is no significant difference between these scoring with a p-value of 0.2982 and 0.95 for computer and human researcher evaluations respectively ($\alpha=0.05$). Comparing the t-test results of computer and human researcher evaluation scores over both the evaluation mediums - computer and pen \& paper, we again fail to establish any significant difference. Based on our results, we can safely rule out the effect of a software developer's familiarity with a computer on the social bias observed in the previous studies.
+
+\subsection{Additional Results}
+To determine the effect of selection bias that we may have encountered during the study between the classroom on day 1, and the students who elected to participate in the study on day 2, we conducted two further t-tests: human researcher evaluation scores on day 1 vs day 2 and computer evaluation scores on day 1 and day 2.
+
+In table \ref{table:ttest}, we can see that there is a significant difference in means between the human scores from day 1 vs day 2 with a p-value of 0.009 ($\alpha=0.01$), but the difference in means which we can see between the two measurements is very small, 0.65 ($\mu_{Day 1}=9.11$ vs $\mu_{Day 2}=9.76$). However, we do not find a significant difference between the computer scoring on the two days as seen in table \ref{table:ttest} with a high p-value of 0.9046 ($\alpha=0.01$) and the very small difference of 0.07 in scoring between the two days ($\mu_{Day 1}=7.64$ vs $\mu_{Day 2}=7.57$).
+
+To count for any potential impact of the homogeneous scorers on the human scores mentioned previously, we conducted an additional t-test of the heterogeneous scores on day 1 vs day 2 for human researcher evaluation scores. As seen in table \ref{table:ttest}, even excluding the homogeneous scorers, we can observe significant difference between scores on day 1 and day 2 with a p-value of 0.002 ($\alpha=0.01$) and a difference of mean of 0.92 ($\mu_{Day 1}=8.6$ vs $\mu_{Day 2}=9.52$).
 
 \section{Discussion}
+\begin{comment}
+Significant results for day one vs Day 2
+    Reasons why we might have seen this result
+\end{comment}
+The participants rated the researchers significantly higher on the second day of testing than the first day.  However, their computer evaluation scores were not significantly different.  There are two probable factors that can explain this effect.  First, self-selection is a plausible  explanation since participants took time out of their schedule to run an experiment.  However, environmental changes may also explain these results.  Since the class all completed the experiment simultaneously, the researchers were speaking to groups of participants while giving the instructions and debriefing.  On the second day, all interactions were one-on-one. Even though the researchers followed a script, the more personal experience could have effected the researcher evaluation scores.  The second explanation is more likely when combined with the fact that the tutor's evaluation scores were statistically equivalent between the two days.
 
-\begin{itemize}
-    \item Overall discussion of the importance or lack of importance of our analysis and results.
-\end{itemize}
+\begin{comment}
+Non Significant results: Social biases towards computers were not observed in software developers
+    -> We saw one weak effect between programming experience and computer evaluation results, but more testing is needed.
+\end{comment}
+From our results, we did not observe any social biases towards computers among software developers. Our results cancel out any existence of the interviewer based social bias and the effect of familiarity of a computer on this bias. We did find a nearly considerable relationship between programming experience and computer evaluation results, but more testing is needed to be conclusive.
 
+\begin{comment}
+Why did we see these results?
+    - Software developers know more about the inner workings of computers.  Consider AI as example.
+\end{comment}
+More research is necessary to determine exactly why software developers do not exhibit the same social biases towards computers as non-software developers.  We speculate that it has to do with software developers intricate knowledge of how software handles data.  Artificial Intelligence is an obvious example of how developers think differently about a piece of software.  For laymen, the computer may appear to be making decisions, and users are more likely to project a sense of "being" onto the machine.  Software developers know that all artificial intelligence is created from well-tailored computer algorithms that manipulate data, regardless of if they know which algorithms are being employed.  A similar effect could explain why laymen appear to exhibit politeness during computer-based interviews.  
+
+\begin{comment}
+Why does it matter?
+    Surveys are a common method of evaluation.  Surveys deployed to different demographics can be informed by these results. 
+\end{comment}
+These results can and should inform how surveys are evaluated in software engineering.  Surveys are commonly used for software assessment purposes, but developers are rarely aware of biases inherent in computer-based evaluations.  Surveys deployed to developers should be evaluated differently than surveys deployed to laymen.  
 \subsection{Threats}
 
 Since our study is a theoretical replication of the original Computers as Social Actors experiment, several new internal and external threats to validity exist.\\
