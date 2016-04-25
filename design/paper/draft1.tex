@@ -49,6 +49,9 @@
 \usepackage{comment}    % For block comments
 \usepackage{cite}       % For group citations
 \usepackage{color}      % For warnings and draft notations
+\usepackage{float}
+
+\graphicspath{ {figures/rGraphs/} }
 
 \begin{document}
 
@@ -104,6 +107,7 @@ Surveys are a commonly used for assessment purposes in software engineering, but
 % http://dl.acm.org/ccs.cfm
 % Please copy and paste the code instead of the example below. 
 %
+
 \begin{CCSXML}
 <ccs2012>
 <concept>
@@ -114,33 +118,50 @@ Surveys are a commonly used for assessment purposes in software engineering, but
 </ccs2012>
 \end{CCSXML}
 
+
 \ccsdesc[500]{Human-centered computing~Human computer interaction (HCI)}
 
 %
 %  Use this command to print the description
 %
+\begin{comment}
 \printccsdesc
+\end{comment}
 
 \keywords{software engineering; computers as social actors}
 
 \section{Introduction}
 In research interviews, honest and forthcoming answers are essential to the process. Interviews are plagued by biases inherent in social interactions. Such biases include the normative-response bias (people not wanting to admit to answers that are counter to the perceived norm), interviewer-based bias (people answering based on the perceived preference of the interviewer), and politeness norms (people modifying answers to avoid offending). Computer systems were introduced to mitigate these known social biases by providing anonymity and an emotionless interviewer.  Since everyone is aware that computers do not have feelings, it was assumed that the phenomenon would not transfer to human computer interaction. 
 
-Through a series of studies, Nass et al. documented how individuals anthropomorphize technology and exhibit attitudes previously thought to be reserved for person to person interaction\cite{nass1999people}\cite{reeves1996people}.  In the first study, participants interacted with an intelligent tutoring system and were asked to evaluate the system in one of three conditions: 1) evaluating the system on the same physical computer, 2) evaluating the system on a different but identical computer, or 3) evaluating the system with a paper-and-pencil questionnaire. Their results showed that participants rated the intelligent tutoring system on the same computer more positively and more homogeneously than in the other conditions. The results suggested that humans unintentionally, unknowingly apply social rules to computer systems.  
+Through a series of studies, Nass et al. documented how individuals anthropomorphize technology and exhibit attitudes previously thought to be reserved for person to person interaction\cite{nass1999people}\cite{reeves1996people}.  In the first study, participants interacted with an intelligent tutoring system and were asked to evaluate the system in one of three conditions: 1) evaluating the system on the same physical computer, 2) evaluating the system on a different but identical computer, or 3) evaluating the system with a pen-and-paper questionnaire. Their results showed that participants rated the intelligent tutoring system on the same computer more positively and more homogeneously than in the other conditions. The results suggested that humans unintentionally, unknowingly apply social rules to computer systems.  
 
 
-The way people interact with computers has changed significantly since the study was published  in 1999.  Computers are now an integral part of both personal and professional life, and users often form strong bonds with their personal devices.  Software developers are more aware of the inanimate nature of machines, but they likely spend more time in front of a computer than those in other professions. Our study is a theoretical replication that measures the effects of social biases in software engineers.  Moreover, we want to test whether using a personal machine introduces a stronger social bias than public computers.Therefore, we designed an experiment to answer the following research questions:
+The way people interact with computers has changed significantly since the study was published  in 1999.  Computers are now an integral part of both personal and professional life, and users often form strong bonds with their personal devices.  Software developers are more aware of the inanimate nature of machines, but they likely spend more time in front of a computer than those in other professions. Our study is a theoretical replication that measures the effects of social biases in software engineers.  Moreover, we want to test whether using a personal machine introduces a stronger social bias than public computers.Therefore, we designed an experiment to answer the following research questions:\\
 
+\noindent \textbf{\emph{Research Question 1:}} do software developers exhibit the social bias phenomena identified in previous studies?\\
+
+\noindent \textbf{\emph{Research Question 2:}} does a software developer's familiarity with a computing environment affect the social bias phenomena?\\
+
+\begin{comment}
 \begin{enumerate}
     \item{Does programming experience affect the social bias phenomena?}
-    \item{Does a software developer's familiarity with a computer affect the social bias phenomena? } 
+    \item{Does a software developer's familiarity with a computer affect the social bias phenomena?} 
 \end{enumerate}
+\end{comment}
 
-We recreated Nass's intelligent tutor using the details found in the original paper.  Our experiment had two independent variables to test our two research questions:
+We recreated Nass's intelligent tutor using the details found in the original paper. Our experiment has two independent variables to test the two research questions:\\
+\begin{enumerate*}
+    \item{\emph{Evaluation method: Participants either used}}
+
+\end{enumerate*}
+
+
+\begin{comment}
 \begin{enumerate}
     \item {\textit{Evaluation method}: Participants either used one computer for the entire experiment, or they completed the final evaluation on an identical pen-and-paper questionnaire.}
     \item {\textit{Computing environment}: Participants either used their personal laptops or a public computer in a computer lab.}
 \end{enumerate}
+\end{comment}
 
 \section{Related Work}
 Previous research demonstrates that computers are often treated as social entities despite their inanimate nature. Some studies have focused on the human application of social norms and expectations to computers in a seamless manner. In addition to the original study, Nass et al. performed a series of follow-up experiments that suggest that social stereotypes attributed to gender, ethnicity, and group loyalty, along with deeply ingrained social habits and behaviors like, reciprocity and reciprocal self-disclosure, are extended to computers when interacting with them~\cite{Nass2000machines,nass1999people}. Moreover, this behavior is not only limited to computers, human users anthropomorphize other technological mediums like television~\cite{reeves1996people}.
@@ -157,7 +178,11 @@ Software developers maintain a collaborative environment with their computers to
 \section{Methods}
 
 \subsection{Participants}
- We had 26 graduate students in Computer Science at NCSU complete the study between the ages of 22 and 30  with the average age being 25.  16 participants were men, and 10 were women.  The shortest amount of programming experience was 5 months, and the longest was 10 years with the average being just under 5 years.  Only 2 participants were Americans, with the rest identifying themselves as international students.  
+ We had 26 graduate students in Computer Science at NCSU complete the study successfully between the ages of 22 and 30  with the average age being 25.  16 participants were men, and 10 were women.  The shortest amount of programming experience was 5 months, and the longest was 10 years with the average being just under 5 years.  Only 2 participants were Americans, with the rest identifying themselves as international students.  
+ 
+ Three students' data had to be thrown out due to incomplete pen-and-paper evaluations.  One additional person indicated that they changed their mind and no longer wanted their data used (a check box on the informed consent).  
+ 
+ 
  \subsubsection{Participant Recruitment} 20 participants were recruited through the introductory masters class in Software Engineering at NCSU.   Students were given the option to leave rather than participate.  The other 6 participants were emailed through the Software Engineering Master's track and volunteered to come in on a separate day. 
  
  \subsection{Testing Environment}
@@ -165,56 +190,77 @@ Software developers maintain a collaborative environment with their computers to
  
  The other participants came to the same computer lab that was used with the class and were asked to bring their laptops with them.  Once they arrived they were either set up at a table with their laptop, or directed to use a public computer.  No more than two students took the experiment at the same time during this day, and there were always two researchers present at all times.  
  
- All participants were given the same introductory instructions and signed informed-consent forms before beginning the experiment.  At the study's completion, all participants went through a verbal debriefing with additional information about the study. \footnote{We eliminated Nass's original condition of evaluating one computer on another because previous, but unpublished replications do not s
+ All participants were given the same introductory instructions and signed informed-consent forms before beginning the experiment.  At the study's completion, all participants went through a verbal debriefing with additional information about the study. \footnote{We eliminated Nass's original condition of evaluating one computer on another because previous, but unpublished replications have shown that different computer evaluations may or may not mitigate social biases \cite{gownivaripalli}.}
 
 \subsection{Conditions}
-Participants were placed in one of four conditions as indicated on their consent sheet.    
-\begin{itemize}
-    \item using and evaluating the tutor on a public computer 
-    \item using the tutor on a public computer with paper-and-pencil evaluation
-    \item using and evaluating the tutor on a personal computer
-    \item using the tutor on a personal computer with paper-and-pencil evaluation
-\end{itemize}
+Participants were placed in one of four conditions as indicated on their consent sheet.  
 
+\begin{itemize}
+    \item \textit{condition 1}: using and evaluating the tutor on a public computer 
+    \item \textit{condition 2}: using the tutor on a public computer with pen-and-paper evaluation
+    \item \textit{condition 3}: using and evaluating the tutor on a personal computer
+    \item \textit{condition 4}: using the tutor on a personal computer with pen-and-paper evaluation
+\end{itemize}
+We eliminated Nass's original condition of evaluating one computer on another because previous, but unpublished replications have shown that different computer evaluations may or may not mitigate social biases \cite{gownivaripalli}.  The consent forms were ordered such that participants would be evenly distributed among the conditions, but this did not happen due to unexpected factors.  First, the professor handing out the consent forms dropped the stack, which got the papers out of order.  After getting the forms, a few students asked for their group to be switched so they did not have to leave the classroom.  Otherwise they would not complete the study.  Lastly, some people did not follow instructions and go to the correct url, did not fill out the pen-and-paper evaluation forms, or did not want their data analyzed.   On the second day of experiments, participants were evenly distributed, and we were able to use all of the data.  The resulting counts in each condition were can be seen in table~\ref{ParticiCount}. 
+
+
+\begin{table}[H]
+\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|}
+\hline
+     Condition & Class & Volunteer & total \\
+     \hline
+     Public Comp & 4 & 2 & 6\\
+     Public Pen-Paper & 5 & 1 & 6\\
+     Personal Comp & 9 & 1 & 10\\
+     Personal Pen-Paper & 2 & 2 & 4\\
+\hline
+\end{tabular}}
+\caption{Breakdown of participants in each condition by day.}
+\label{ParticiCount}
+\end{table}
 
 
 \subsection{Procedure}
 
-The following procedure is a theoretical replication of the original Nass study.   Participants were told that they would test and evaluate an artificial tutoring system focused on American college culture.  The tutor consisted of three parts: a tutorial that gauged existing knowledge as well as offered new knowledge, a testing session, and a scoring session.  After participants completed the scoring session, they would then be asked to evaluate their experience.  Finally, participants would be debriefed at the end of the experiment where they wold be told the true intention of the study.  
+The following procedure is a theoretical replication of the original Nass study.   Participants were told that they would test and evaluate an artificial tutoring system focused on American college culture.  The tutor consisted of three parts: a tutorial that gauged existing knowledge as well as offered new knowledge, a testing session, and a scoring session.  After participants completed the scoring session, they would then be asked to evaluate their experience.  Finally, participants would be debriefed at the end of the experiment where they wold be told the true intentions of the study, including that the tutor was a mock-up and the "politeness" effect previously documented.    
 
-Participants were given the website URL as a part of the informed consent along with a user-name and group number.  If the participant was in a paper-and-pencil group, they would also be given the final questionnaire with a coversheet that explicitly stated that they were to open it only after completing the scoring session.  The questionnaire was sealed so that viewing it had to be intentional.  This was done to control the amount of time that elapses between the end of the scoring session and the evaluation in both the paper-and-pencil scenario and the computerized questionnaire.  Basic demographic information was collected on the first page including age, race, gender, international status, and programming experience. The tutoring system provided the participants will all the necessary instructions throughout the experiment.  
+Participants were given the website URL as a part of the informed consent along with a user-name and group number.  If the participant was in a pen-and-paper group, they would also be given the final questionnaire.  The questionnaire was sealed so that viewing it had to be intentional.  This was done to control the amount of time that elapses between the end of the scoring session and the evaluation in both the pen-and-paper scenario and the computerized questionnaire.  The pen-and-paper questionnaire was a print-out of the webpages seen by the other conditions.  Basic demographic information was collected on the first page including age, race, gender, international status, and programming experience. The tutoring system provided the participants will all the necessary instructions throughout the experiment.  
+
 
 \begin{figure}[!h]
     \includegraphics[width=\linewidth]{figures/website/04_tutoring.png}
     \caption{In the tutoring session, users were asked to indicate their knowledge of a topic using one of three possible answers.}
+    \label{TutorFigure}
 \end{figure}
 
 \subsubsection{Tutoring Session}
-Participants were told that the tutoring session had two functions: 1) To gauge existing knowledge to avoid teaching the participant things they already knew, and 2) provide new facts that led to new insights on the subject matter.  During the session, the participant would see a single fact and they had to indicate how familiar they were with that fact on a 3-point scale: 1 (know very little), 2 (know some), or 3 (know a great deal). They were told that they would receive 20 facts out of a total of 1,000 possible facts based on the premise that the more familiar they were with a fact, the less they needed additional information on that topic.  This established the user's active role in the tutoring session to engage the user in a social interaction \cite{nass1993voices}.  However, this was a deception.  All participants received the same facts in the same order.
-
-\begin{figure}[!h]
-    \includegraphics[width=\linewidth]{figures/website/06_testing.png}
-    \caption{Descriptive caption}
-\end{figure}
+Participants were told that the tutoring session had two functions: 1) To gauge existing knowledge to avoid teaching the participant things they already knew, and 2) provide new facts that led to new insights on the subject matter.  During the session, the participant would see a single fact, and they had to indicate how familiar they were with that fact on a 3-point scale: 1 (know very little), 2 (know some), or 3 (know a great deal) as seen in figure~\ref{TutorFigure}. They were told that they would receive 20 facts out of a total of 1,000 possible facts based on the premise that the more familiar they were with a fact, the less they needed additional information on that topic.  This established the user's active role in the tutoring session to engage the user in a social interaction \cite{nass1993voices}.  However, this was a deception.  All participants received the same facts in the same order.
 
 \subsubsection{Testing Session}
-After completing the tutoring session, participants took a test with twelve multiple choice questions, each with five possible answers.  They were told that the test represented the breadth of topics covered by the tutor's database, and the questions were chosen randomly from a set of 5,000 possible questions.   Each question was displayed individually, and a randomly timed animation separated each question to simulate the time to query the database.  However, this was also a deception.  All participants received the same questions in the same order.  
+After completing the tutoring session, participants took a test with twelve multiple choice questions, each with five possible answers as seen in figure~\ref{TestingFigure}.  They were told that the test represented the breadth of topics covered by the tutor's database, and the questions were chosen randomly from a set of 5,000 possible questions.   Each question was displayed individually, and a timed animation separated each question to simulate the time to query the database.  This was also a deception.  All participants received the same questions in the same order.  
 
 Some questions were worded so that there was no objectively correct answer.  For example "What percentage of students usually live on a college campus?"  This answer changes wildly from school to school, and thus there is no correct answer.  This became very important for the scoring session which was also deceptive.  
 
 \begin{figure}[!h]
-    \includegraphics[width=\linewidth]{figures/website/08_scoring.png}
-    \caption{Descriptive caption}
+    \includegraphics[width=\linewidth]{figures/website/06_testing.png}
+    \caption{A multiple-choice question used in the testing session.}
+    \label{TestingFigure}
 \end{figure}
+
 
 \subsubsection{Scoring Session}
 The instructions for the scoring session stated that the tutor would evaluate the participants' performance on the test as well as its own performance in preparing them for it.  Questions were revealed two at a time as being marked correct or incorrect.  All users were told that they got an eight out of twelve.  Since all users were told that they  missed the same four questions, correct answers could not be revealed.  
 
-Instead of giving the correct answer, the tutor praised its own performance if the user got it right or said that it "underestimated" the user's knowledge if that answer was marked incorrect.  These statements were specifically worded to invoke the social cue that the expected feedback should be positive. This is the only effort made to elicit a social response. Every other social cue was minimized.  The tutor was not anthropomorphized in any way.  It only referred to itself as "the tutor" and never "I".  No picture or name was given to the tutor, and the language chosen was specifically to exhibit no emotion.  
+Instead of giving the correct answer, the tutor praised its own performance if the user got it right or said that it "underestimated" the user's knowledge if that answer was marked incorrect.  These statements were specifically worded to invoke the social cue that the expected feedback should be positive. Icons were originally present, but removed so that users had to read the text in order to find out if the question was marked correct. 
 
+The wording of the feedback was the only effort made to elicit a social response. Every other social cue was minimized.  The tutor was not anthropomorphized in any way.  It only referred to itself as "the tutor" and never "I".  No picture or name was given to the tutor, and the language chosen was specifically to exhibit no emotion.  
 
+\begin{figure}[!h]
+    \includegraphics[width=\linewidth]{figures/website/08_scoring.png}
+    \caption{The feedback shown to the user.  No visual cues were included to force users to read the text.}
+\end{figure}
 \subsubsection{Evaluation Questionnaire}
-After the participants were done interacting with the tutor, they were asked to evaluate their experience.  The evaluation questionnaire had two sections; the first evaluated the tutor, while the second evaluated the researchers administering the experiment.  Depending on which group they were in, they would either be filling out additional pages on the website, or a paper-and-pencil version included in the materials provided to them at the beginning.  The time between completing the scoring session and beginning the evaluation section should be similar across all groups.  The instructions and questions in all cases were identical.  The paper-and-pencil version was a formatted print out of the web page used in the other condition.
+After the participants were done interacting with the tutor, they were asked to evaluate their experience.  The evaluation questionnaire had two sections; the first evaluated the tutor, while the second evaluated the researchers administering the experiment.  Depending on which group they were in, they would either be filling out additional pages on the website, or a pen-and-paper version included in the materials provided to them at the beginning.  The instructions and questions in all cases were identical. 
 
 \begin{figure}[!h]
     \includegraphics[width=\linewidth]{figures/website/12_eval.png}
@@ -226,38 +272,101 @@ Participants were told that the the answers to these questions would be used as 
 
 \begin{figure}[!h]
     \includegraphics[width=\linewidth]{figures/website/13_eval2.png}
-    \caption{Descriptive caption}
+    \caption{Evaluation of the tutor.}
 \end{figure}
 
 \paragraph{Researcher Evaluation}
 The format of the second part of the evaluation was the same as the first. Participants were given the same instructions  and a list of new adjectives to describe the researchers with whom they interacted with.  No adjective appeared in both sections.  Six of the adjectives ("helpful", "polite", "friendly", "knowledgeable", "competent", "likable") were taking from the original study. We added "approachable", "passionate", and "focused".
 
-Participants were told that these answers would not be included in the final paper results.  Instead, the researchers would read the feedback themselves and use it to improve future iterations of the experiment.  This section's purpose was to be used as a control.  Theoretically, we would expect politeness to be the same across both paper-and-pencil as well as on the computer since they were specifically told that we would be reading their feedback ourselves.  Additionally, since their answers were not recorded for posterity, we would be the \textit{only} people reading it.
+Participants were told that these answers would not be included in the final paper results.  Instead, the researchers would read the feedback themselves and use it to improve future iterations of the experiment.  This section's purpose was to be used as a control of politeness.  Theoretically, we would expect politeness to be the same across both pen-and-paper as well as on the computer since they were specifically told that we would be reading their feedback ourselves.  Additionally, since their answers were not recorded for posterity, we would be the \textit{only} people reading it.  As a result we can compare the politeness shown to us and compare it to the politeness shown to the computer.
 
-\begin{itemize}
-    \item Screen-shots of the website which participants visited.
-    \item Detailed information about the experimental environment: 
-    \begin{itemize}
-        \item Where the study took place.
-        \item What machines people used.
-        \item How long the study took.
-        \item Explanation of the function of the website used.
-    \end{itemize}
-\end{itemize}
  
 \section{Results}
+From our study design, we define the following four conditions:\\
+\begin{enumerate}
+    \item{PUBPP} Subject used public computer, and pen \& paper for evaluation.
+    \item{PUBCE} Subject used public computer and computer for evaluation.
+    \item{PCPP} Subject used personal computer and pen \& paper for evaluation.
+    \item{PCCE} Subject used personal computer and computer for evaluation.
+\end{enumerate}
 
-\begin{itemize}
-    \item Overall description of what our results were.
-\end{itemize}
+We considered further aggregate conditions such as personal (PCPP and PCCE), public (PUBPP and PUBCE) based on which computer type was used by the subject for the study, and pen \& paper, computer based on which medium was used by the subject to evaluate the computer and human researchers. Figure \ref{fig:fourCondAvg} shows the average scores for computer evaluations by each of the nine questions across all four conditions. When considering the aggregate groups, figure \ref{fig:pervpub} and \ref{fig:ppvcomp} displays the average scores for computer evaluations by question for personal vs public and computer vs pen \& paper respectively.
 
-\subsection{Analysis}
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{FourCondtionAverageScores}
+\centering
+\caption{Average computer scores by question : all conditions}
+\label{fig:fourCondAvg}
+\end{figure}
 
-\begin{itemize}
-    \item Graph describing the differences between CSC group and Psychology group, along with discussion of that graph.
-    \item Table describing differences between CSC groups and Psych group, with discussion.
-    \item Appropriate statistical tests to describe potential inferences that can be made from the results.
-\end{itemize}
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{ScorebyQuestion_persVpub}
+\centering
+\caption{Average computer scores by question : personal vs public computers}
+\label{fig:pervpub}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{ScorebyQuestion_ppVcomp}
+\centering
+\caption{Average computer scores by question : pen and paper vs computer}
+\label{fig:ppvcomp}
+\end{figure}
+
+To get a better idea of the distribution of the computer evaluation scores over the conditions, figure \ref{fig:compBoxPlot} and \ref{fig:humanBoxPlot} show the box and whisker plots for the computer and human researcher evaluation scores respectively.
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{compBoxPlot}
+\centering
+\caption{Distribution of computer scores over all conditions}
+\label{fig:compBoxPlot}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{humanBoxPlot}
+\centering
+\caption{Distribution of human scores over all conditions}
+\label{fig:humanBoxPlot}
+\end{figure}
+
+To answer our research questions, we conducted two tailed T-tests over 9 different measurements in our data, here displayed in table \ref{table:ttest}. With these 
+
+\begin{table*}[t]
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|}
+\hline
+Variable 1 & Variable 2   & P-Value    & Mean: Var 1 & Mean: Var 2 \\
+\hline
+Computer & Pen and Paper (Human)        & 0.16                           & 9.09              & 9.52              \\
+Computer & Pen and Paper (Computer)     & 0.15                           & 7.93              & 7.14              \\
+Personal & Public (Human)               & 0.95                           & 9.27              & 9.24              \\
+Personal & Public (Computer)            & 0.2982                         & 7.35              & 7.87              \\
+Human & Computer                        & $2.01*10^{-6}$ ***                 & 9.26              & 7.63              \\
+Human & Computer Non-Homogenous         & 0.005 **                         & 8.79              & 7.41              \\
+Day 1 & Day 2 (Human)                   & 0.009 **                         & 9.12              & 9.76              \\
+Day 1 & Day 2 (Human) Non-Homogenous    & 0.002 **                         & 8.6               & 9.52              \\
+Day 1 & Day 2 (Comp)                     & 0.9                            & 7.64              & 7.57              \\
+\hline
+\end{tabular}}
+\caption{T-Test Results}
+\label{table:ttest}
+\end{table*}
+
+%Three asterisks indicates significance to an alpha of .001, two asterisks indicates 0.01, and finally a single dot indicates 0.1.
+
+\begin{table}[h]
+\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|}
+\hline
+Condition    & P-Value\\
+\hline
+Programmer Experience (Computer) & 0.62\\
+Programmer Experience (Human) & 0.1 $\cdot$\\
+Type (Human) &  0.65\\ 
+Type (Computer) & 0.38\\
+\hline
+\end{tabular}}
+\caption{Analysis of Variance Results}
+\label{my-label}
+\end{table}
 
 \section{Discussion}
 
@@ -267,27 +376,13 @@ Participants were told that these answers would not be included in the final pap
 
 \subsection{Threats}
 
-\noindent \textbf{Internal Validity:} \\
+Since our study is a theoretical replication of the original Computers as Social Actors experiment, several new internal and external threats to validity exist.\\
 
-- no non-computer science students run through study / comparing to Nass might not be appropriate given time difference between studies. 
+\emph{Internal Validity:} The main limitation of our study is the lack of participants having no software development experience. In the seventeen years since the Nass study, common knowledge of computer technology has evolved for individuals without technical education. By running the study with both software engineers and individuals with no technical background, potential confounding factors introduced by this evolution would be addressed and the study's findings could be further strengthened. Limited access to students outside the computer science department made eliminating this threat impractical within the study's completion time-frame. 
 
-- Limited access to potential study participants. 
+Access to study participants even within the computer science department was also a challenge given the large number of subjects needed to reach an ideal representative population. Consequently, the individuals who did participate might exhibit a self selection bias. Nearly all students were not just software developers, but also software engineering graduate students. These students might have an inherent interest in our study, potentially artificially motivating their responses. Additionally, given their targeted software engineering education, these students might have been able to deduce the purpose of the study during their participation. This scenario could also alter their responses.\\
 
-- self selection - participants were not just software developers, but nearly all were also software engineering students. 
-
-- As a result of above, they might have been able to figure out what we were doing. 
-
-- some students figured out the tutoring system was fake / could have changed their motivation during evaluation session. 
-
-
-\noindent \textbf{External Validity:} \\
-
-- population diversity: age, international status, graduate population vs. professional software developers
-
-- representative sample size: smaller sample size, groups had difference sample sizes
-
-- MCsSE students motivated to complete study because of degree credit requirement
-
+\emph{External Validity:} The diversity of our population is the primary threat to the generalizability of our results to additional populations. The demographics of our population cluster around international computer science graduate students in their early to mid-twenties. These individuals are strongly differentiated in level of technical education compared to the general public; however, they still might not faithfully represent software developers as a whole. Furthermore, graduate students in the Software Engineering Master's ``Track" receive degree credit for their participation. This factor presents a potential artificial motivator that threatens validity; however, we consider this effect to be minimal since several students declined to accept credit when asked.   
 
 \subsection{Future Work}
 
@@ -306,7 +401,7 @@ We wish to thank Dr. Tim Menzies for allowing us to conduct our study with stude
 \bibliographystyle{abbrv}
 \bibliography{sigproc}
 
-\newpage
+%\newpage
 \appendix
 
 \section{Transcripts}
@@ -320,6 +415,7 @@ We wish to thank Dr. Tim Menzies for allowing us to conduct our study with stude
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{appendix/signup_form.png}
+    \caption{The study sign-up form linked to from the recruitment email.}
 \end{figure}
 
 \subsection{Participant Introduction Script}
@@ -399,7 +495,7 @@ We wish to thank Dr. Tim Menzies for allowing us to conduct our study with stude
 
 \noindent The second page asks you to evaluate researchers with whom you interacted. These answers are strictly for our own benefit, and won't be included in publication. We are the only ones who will see your answers to this section.\\
 
-\noindent \emph{Paper / Pencil Evaluation:}\\
+\noindent \emph{Pen / Paper Evaluation:}\\
 \noindent Next, tell us about your experience using NAS tutoring. Higher numbers indicates a better experience. Now may now open your evaluation packet. The first page asks you to evaluate the NAS Tutoring system. These responses may be used as qualitative data in future publications.\\
 
 \noindent The second page asks you to evaluate researchers with whom you interacted. These answers are strictly for our own benefit, and won't be included in publication. We are the only ones who will see your answers to this section. \emph{Please remember to write your user id on your evaluation packet.}\\
